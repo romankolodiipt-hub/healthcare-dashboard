@@ -73,7 +73,7 @@ export type Patient = {
   insurance_type: string;
   diagnosis_history: PatientsDiagnosisHistory[];
   diagnostic_list: Diagnostic[];
-  lab_results: LabResult[];
+  lab_results: string[];
 };
 
 export type SelectedRange = "6" | "12" | "18";

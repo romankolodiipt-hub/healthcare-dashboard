@@ -2,7 +2,7 @@ import { LabResult } from "../types/types";
 import { Article } from "./Article";
 
 interface LabResultsProps {
-  labResults: LabResult[] | [];
+  labResults: string[];
 }
 
 export const LabResults: React.FC<LabResultsProps> = ({ labResults }) => {

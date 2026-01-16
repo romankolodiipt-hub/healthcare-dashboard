@@ -15,7 +15,7 @@ export const LabResults: React.FC<LabResultsProps> = ({ labResults }) => {
             <li key={result}>
               <button className="flex justify-between items-center w-full hover:bg-[#F6F7F8] px-4 py-3 cursor-pointer">
                 <p>{result}</p>
-                <img src="/icons/Download.svg" alt="Download" />
+                <img src="/icons/download.svg" alt="Download" />
               </button>
             </li>
           );

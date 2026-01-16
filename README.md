@@ -28,12 +28,14 @@ A modern, responsive healthcare dashboard application for monitoring patient hea
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/romankolodiipt-hub/healthcare-dashboard.git
 cd healthcare-dashboard
 ```
 
 2. **Install dependencies**
+
 ```bash
 pnpm install
 # or
@@ -43,6 +45,7 @@ npm install
 3. **Set up environment variables**
 
 Create a `.env.local` file in the project root:
+
 ```env
 AUTH_USERNAME=your_username
 AUTH_PASSWORD=your_password
@@ -51,6 +54,7 @@ AUTH_PASSWORD=your_password
 > **Note:** If credentials are not provided, the app will automatically fallback to mock data.
 
 4. **Run the development server**
+
 ```bash
 pnpm dev
 # or
@@ -64,12 +68,14 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ## 📦 Build & Deploy
 
 ### Production Build
+
 ```bash
 pnpm build
 pnpm start
 ```
 
 ### Static Export (SSG)
+
 ```bash
 pnpm build
 ```
@@ -118,16 +124,19 @@ healthcare-dashboard/
 ## 🛠️ Technologies
 
 ### Core
+
 - **Next.js 16.1** - React framework with App Router
 - **React 19.2** - UI library
 - **TypeScript 5** - Type safety
 - **Tailwind CSS 4** - Utility-first CSS
 
 ### Data Visualization
+
 - **Chart.js 4.5** - Interactive charts
 - **react-chartjs-2 5.3** - React wrapper for Chart.js
 
 ### UI/UX
+
 - **react-loading-skeleton 3.5** - Loading states
 - **Next/Image** - Optimized image loading
 - **Custom animations** - Smooth transitions
@@ -135,29 +144,34 @@ healthcare-dashboard/
 ## 🔧 Recent Optimizations
 
 ### Performance
+
 - ✅ **React.memo** - Prevents unnecessary re-renders in PatientCard and Patients components
 - ✅ **Image Optimization** - Responsive sizes, quality tuning, and proper alt text
 - ✅ **SSG (Static Site Generation)** - Pre-rendered patient pages for instant loading
 - ✅ **Code Splitting** - Automatic by Next.js App Router
 
 ### Reliability
+
 - ✅ **Retry Logic** - Exponential backoff for API failures (3 retries with 1s, 2s, 3s delays)
 - ✅ **Fallback Data** - Automatic switch to mock data if API is unavailable
 - ✅ **Error Boundaries** - Graceful error handling
 
 ### Code Quality
+
 - ✅ **TypeScript** - Full type coverage with strict mode
 - ✅ **JSDoc Comments** - Comprehensive documentation for all utilities
 - ✅ **Enhanced Types** - PatientContextType with isLoading/error states
 - ✅ **Enum Support** - MonthsEnum for type-safe month handling
 
 ### Bug Fixes
+
 - 🐛 **Fixed:** Temperature level bug in HealthMetrics (was showing respiratory_rate.levels)
 - 🐛 **Fixed:** Context re-creation on window resize (removed unnecessary useResize pattern)
 
 ## 📊 API Integration
 
 The app fetches patient data from:
+
 ```
 https://fedskillstest.coalitiontechnologies.workers.dev
 ```
@@ -165,6 +179,7 @@ https://fedskillstest.coalitiontechnologies.workers.dev
 **Authentication:** Basic Auth (Base64 encoded)
 
 **Features:**
+
 - Automatic retry on failure (3 attempts)
 - Exponential backoff (1s → 2s → 3s)
 - Fallback to mock data
@@ -173,11 +188,13 @@ https://fedskillstest.coalitiontechnologies.workers.dev
 ## 🎨 Design Features
 
 - **Custom Color Palette:**
+
   - Primary: `#01F0D0` (Turquoise)
   - Secondary: `#072635` (Dark Blue)
   - Accent: `#E66FD2` (Pink)
 
 - **Animations:**
+
   - Fade In: 0.3s ease-in
   - Slide Down: 0.3s ease-out
   - Smooth transitions on hover states
@@ -213,12 +230,12 @@ pnpm lint
 
 ## 📝 Environment Variables
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `AUTH_USERNAME` | API authentication username | No* |
-| `AUTH_PASSWORD` | API authentication password | No* |
+| Variable        | Description                 | Required |
+| --------------- | --------------------------- | -------- |
+| `AUTH_USERNAME` | API authentication username | No\*     |
+| `AUTH_PASSWORD` | API authentication password | No\*     |
 
-*Falls back to mock data if not provided
+\*Falls back to mock data if not provided
 
 ## 🤝 Contributing
 
@@ -231,6 +248,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👤 Author
 
 Roman Kolodii
+
 - GitHub: [@romankolodiipt-hub](https://github.com/romankolodiipt-hub)
 - Repository: [healthcare-dashboard](https://github.com/romankolodiipt-hub/healthcare-dashboard)
 

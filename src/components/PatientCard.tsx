@@ -17,7 +17,7 @@ const PatientCardComponent: React.FC<PatientCardProps> = ({ patient }) => {
     <Article>
       <div className="flex flex-col gap-8 py-3">
         <h2 id="profile-card-title" className="sr-only">
-          Карта пацієнта
+          Patient Card
         </h2>
         <div className="flex flex-col items-center gap-6">
           {/* 📸 ОПТИМІЗОВАНО: додав sizes, quality, proper alt */}
@@ -36,36 +36,36 @@ const PatientCardComponent: React.FC<PatientCardProps> = ({ patient }) => {
         <div className="flex flex-col gap-6">
           <PatientCardField
             iconSrc={"/icons/BirthIcon.svg"}
-            title={"Дата народження"}
+            title={"Date of Birth"}
             value={convertDate(patient.date_of_birth)}
           />
           <PatientCardField
             iconSrc={"/icons/FemaleIcon.svg"}
-            title={"Стать"}
+            title={"Gender"}
             value={patient.gender}
           />
           <PatientCardField
             iconSrc={"/icons/PhoneIcon.svg"}
-            title={"Контактна інформація"}
+            title={"Contact Info."}
             value={patient.phone_number}
           />
           <PatientCardField
             iconSrc={"/icons/PhoneIcon.svg"}
-            title={"Аварійні контакти"}
+            title={"Emergency Contacts"}
             value={patient.emergency_contact}
           />
           <PatientCardField
             iconSrc={"/icons/InsuranceIcon.svg"}
-            title={"Страховий полісант"}
+            title={"Insurance Provider"}
             value={patient.insurance_type}
           />
         </div>
         <div className="flex justify-center mt-2">
           <button
             className="body-emphasized-14pt w-56 rounded-3xl bg-[#01F0D0] px-10 py-3 cursor-pointer hover:opacity-80 transition-opacity duration-200"
-            aria-label="Показати всю інформацію"
+            aria-label="Show all information"
           >
-            Показати всю інформацію
+            Show All Information
           </button>
         </div>
       </div>

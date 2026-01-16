@@ -18,9 +18,9 @@ const manrope = Manrope({
 
 // 📝 ОНОВЛЕНО: Кращі metadata для SEO
 export const metadata: Metadata = {
-  title: "Healthcare Dashboard - Моніторинг здоров'я пацієнтів",
+  title: "Healthcare Dashboard - Patient Health Monitoring",
   description:
-    "Платформа для моніторингу здоров'я пацієнтів з аналізом діагнозів та показників",
+    "Platform for monitoring patient health with diagnosis and vital signs analysis",
   keywords: ["healthcare", "dashboard", "medical", "patients"],
 };
 
@@ -41,7 +41,7 @@ export default async function RootLayout({
         {/* 🔄 Провайдер контексту з даними пацієнтів */}
         <PatientsProvider data={data}>
           <header className="flex py-3 px-8 items-center justify-between gap-8 bg-[var(--unnamed-color-ffffff)] rounded-[70px]">
-            <div className="logo" aria-label="Логотип Healthcare Dashboard">
+            <div className="logo" aria-label="Healthcare Dashboard Logo">
               <Link href="/">
                 <Image
                   src="/images/TestLogo.svg"

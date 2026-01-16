@@ -15,11 +15,11 @@ export const HealthMetrics: React.FC<HealthMetricsProps> = ({
   return (
     <article className="" aria-labelledby="health-metrics-title">
       <h3 id="health-metrics-title" className="sr-only">
-        Показники здоров'я
+        Health Metrics
       </h3>
       <div className="flex justify-between gap-5">
         <VitalCard
-          title="Частота дихання"
+          title="Respiratory Rate"
           level={respiratory_rate.levels}
           measurement={{ unit: "bpm", value: respiratory_rate.value }}
           iconSrc="/images/respiratory-rate.svg"
@@ -27,14 +27,14 @@ export const HealthMetrics: React.FC<HealthMetricsProps> = ({
         />
         {/* 🐛 ВИПРАВЛЕНО: було respiratory_rate.levels, тепер temperature.levels */}
         <VitalCard
-          title="Температура"
+          title="Temperature"
           level={temperature.levels}
           measurement={{ unit: "°F", value: temperature.value }}
           iconSrc="/images/temperature.svg"
           bgColor="#FFE6E9"
         />
         <VitalCard
-          title="Частота серцебиття"
+          title="Heart Rate"
           level={heart_rate.levels}
           measurement={{ unit: "bpm", value: heart_rate.value }}
           iconSrc="/images/HeartBPM.svg"

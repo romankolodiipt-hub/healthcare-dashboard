@@ -17,10 +17,10 @@ const PatientsComponent = () => {
   return (
     <aside className="min-w-[368px] bg-white rounded-2xl flex flex-col pb-5">
       <div className="flex items-center justify-between p-5 pb-10">
-        <h2 className="card-title-24pt">Пацієнти</h2>
+        <h2 className="card-title-24pt">Patients</h2>
         <button
           className="cursor-pointer hover:opacity-70 transition-opacity"
-          aria-label="Пошук пацієнтів"
+          aria-label="Search patients"
         >
           <img src="/icons/search.svg" alt="" className="w-[18px] h-[18px]" />
         </button>
